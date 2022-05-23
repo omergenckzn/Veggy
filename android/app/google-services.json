@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "862671856727",
+    "project_id": "veggy-b91ab",
+    "storage_bucket": "veggy-b91ab.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:862671856727:android:240b4f5f709ef129992f12",
+        "android_client_info": {
+          "package_name": "com.kzn.veggy_v1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "862671856727-bnd5nllpjd2dee4qqu70e65urmsre3c4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCq1MFdtI0xwmCCbeasoP3DclbZcB3zKYc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "862671856727-bnd5nllpjd2dee4qqu70e65urmsre3c4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
