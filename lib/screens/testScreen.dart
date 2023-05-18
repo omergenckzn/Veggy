@@ -26,7 +26,7 @@ class _testScreenState extends State<testScreen> {
               child: ElevatedButton(
                 child: Text('Write Data'),
                 onPressed: (){
-                  String name = 'Spinach Soup';
+                  String name = 'Baklava';
                   List<String> splitList = name.split(" ");
                   print(splitList);
                   List<String> indexList = [];
@@ -38,9 +38,9 @@ class _testScreenState extends State<testScreen> {
                   }
                   print(indexList);
 
-                  firestoreInstance.collection("recipes").add(
+                  firestoreInstance.collection("startTheDayRecipes").add(
                       {
-                        "calories" : 100,
+                        "calories" : 110,
                         "howTo" : [
                           4,
                           "Heat the butter in a large saucepan. Add the spring onions, leek, celery and potato. Stir and put on the lid. Sweat for 10 minutes, stirring a couple of times.",
@@ -56,9 +56,9 @@ class _testScreenState extends State<testScreen> {
                           "oil.png",
 
                         ],
-                        "name" : "Spinach Soup",
-                        "preperation" : "20min",
-                        "servings" : 4,
+                        "name" : name,
+                        "preperation" : "34in",
+                        "servings" : 24,
                         "searchIndex": indexList
 
                       }).then((value){
@@ -68,24 +68,7 @@ class _testScreenState extends State<testScreen> {
               ),
             ),
 
-            TextField(
-            textInputAction: TextInputAction.search,
-      decoration: InputDecoration(
-      hintText:'type something..',
-      hintStyle: TextStyle(
-      fontFamily: "Sfui2",
-      fontWeight: FontWeight.w500,
-      color: Color.fromRGBO(43, 43, 43, 0.4),
-      fontSize: MediaQuery.of(context).size.width * 0.043,
 
-      ),
-      ),
-              onSubmitted:  (val) {
-              print(val);
-
-              },
-
-            ),
 
           ],
         )

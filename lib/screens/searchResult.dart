@@ -47,8 +47,8 @@ class _searchResultState extends State<searchResult> {
                 elevation: 0.0,
                 shape: CircleBorder(),
                 padding: EdgeInsets.all(4),
-                primary: themeColor, // <-- Button color
-                onPrimary: Colors.white, // <-- Splash color
+                backgroundColor: themeColor, // <-- Button color
+                foregroundColor: Colors.white, // <-- Splash color
                 minimumSize: Size(50.0, 20.0),
               ),
             ),
@@ -272,7 +272,3 @@ class _searchResultState extends State<searchResult> {
   }
 }
 
-//FirebaseFirestore.instance
-//                         .collection('recipes')
-//                         .where("name", arrayContains: searchKeySpaceless, )
-//                         .snapshots(),

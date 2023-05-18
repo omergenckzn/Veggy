@@ -14,8 +14,8 @@ class startTheDay extends StatefulWidget {
 }
 
 class _startTheDayState extends State<startTheDay> {
-  CollectionReference startTheDayRef = FirebaseFirestore.instance.collection('recipes');
-  DocumentReference brocoliWithOliveOil = FirebaseFirestore.instance.collection('recipes').doc('brocoliwitholiveoil');
+  CollectionReference startTheDayRef = FirebaseFirestore.instance.collection('startTheDayRecipes');
+
   Color pageThemeColor = Color.fromRGBO(242, 201, 76, 1);
 
 

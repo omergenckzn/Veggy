@@ -13,7 +13,6 @@ class fastfood extends StatefulWidget {
 
 class _fastfoodState extends State<fastfood> {
   CollectionReference startTheDayRef = FirebaseFirestore.instance.collection('recipes');
-  DocumentReference brocoliWithOliveOil = FirebaseFirestore.instance.collection('recipes').doc('brocoliwitholiveoil');
   Color pageThemeColor = Color.fromRGBO(235, 87, 87, 1);
 
 

@@ -17,7 +17,7 @@ class _ingredientsState extends State<ingredients> {
 
     var route =  ModalRoute.of(context);
     if (route == null) return CircularProgressIndicator();
-   Map data =  route.settings.arguments as Map;
+    Map data =  route.settings.arguments as Map;
 
    Color themeColor = data['color'];
    List howToList = data['recipe']['howTo'];
@@ -243,7 +243,7 @@ class _ingredientsState extends State<ingredients> {
                   style: ElevatedButton.styleFrom(
                     elevation: 1.5,
                     fixedSize: Size(MediaQuery.of(context).size.width * 0.2,MediaQuery.of(context).size.width * 0.2),
-                      primary: Color.fromRGBO(255, 255, 255, 1),
+                      backgroundColor: Color.fromRGBO(255, 255, 255, 1),
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(10)
                       ),
