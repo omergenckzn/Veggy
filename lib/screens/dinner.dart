@@ -13,7 +13,7 @@ class dinner extends StatefulWidget {
 
 class _dinnerState extends State<dinner> {
   CollectionReference dinnerRef = FirebaseFirestore.instance.collection('dinnerRecipes');
-  Color pageThemeColor = Color.fromRGBO(242, 153, 74, 1);fluttfl
+  Color pageThemeColor = Color.fromRGBO(242, 153, 74, 1);
 
 
   @override
