@@ -13,8 +13,8 @@ class dessert extends StatefulWidget {
 }
 
 class _dessertState extends State<dessert> {
-  CollectionReference startTheDayRef = FirebaseFirestore.instance.collection('recipes');
-   CollectionReference dinnerRef = FirebaseFirestore.instance.collection('recipes');
+
+   CollectionReference dinnerRef = FirebaseFirestore.instance.collection('dessertRecipes');
   Color pageThemeColor = Color.fromRGBO(187, 107, 217, 1);
   var storageRef = FirebaseStorage.instance.ref();
 
@@ -131,7 +131,7 @@ class _dessertState extends State<dessert> {
               color: Colors.white,
               height: 261,
               child: StreamBuilder<QuerySnapshot>(
-                  stream: startTheDayRef.snapshots(),
+                  stream: dinnerRef.snapshots(),
                   builder: (context, AsyncSnapshot snapshots){
                     if(snapshots.hasError){
                       return Text('no data');
@@ -265,7 +265,7 @@ class _dessertState extends State<dessert> {
               color: Colors.white,
               height: 261,
               child: StreamBuilder<QuerySnapshot>(
-                  stream: startTheDayRef.snapshots(),
+                  stream: dinnerRef.snapshots(),
                   builder: (context, AsyncSnapshot snapshots){
                     if(snapshots.hasError){
                       return Text('no data');
