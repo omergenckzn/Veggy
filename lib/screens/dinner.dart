@@ -13,6 +13,7 @@ class dinner extends StatefulWidget {
 
 class _dinnerState extends State<dinner> {
   CollectionReference dinnerRef = FirebaseFirestore.instance.collection('dinnerRecipes');
+  CollectionReference fitRef = FirebaseFirestore.instance.collection('fitRecipes');
   Color pageThemeColor = Color.fromRGBO(242, 153, 74, 1);
 
 
@@ -81,7 +82,7 @@ class _dinnerState extends State<dinner> {
                         Expanded(
                           flex: 5,
                           child: Text(
-                            'Dinner?',
+                            'Dinner',
                             style: TextStyle(
                                 fontFamily: "Sfui",
                                 fontWeight: FontWeight.w700,
@@ -273,7 +274,7 @@ class _dinnerState extends State<dinner> {
               color: Colors.white,
               height: 261,
               child: StreamBuilder<QuerySnapshot>(
-                  stream: dinnerRef.snapshots(),
+                  stream: fitRef.snapshots(),
                   builder: (context, AsyncSnapshot snapshots) {
                     if (snapshots.connectionState == ConnectionState.waiting) {
                       return Center(child: CircularProgressIndicator(),);

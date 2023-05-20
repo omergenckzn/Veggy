@@ -13,6 +13,7 @@ class fastfood extends StatefulWidget {
 
 class _fastfoodState extends State<fastfood> {
   CollectionReference startTheDayRef = FirebaseFirestore.instance.collection('fastFoodRecipes');
+  CollectionReference hamburgerRef = FirebaseFirestore.instance.collection('hamburgerRecipes');
   Color pageThemeColor = Color.fromRGBO(235, 87, 87, 1);
 
 
@@ -262,7 +263,7 @@ class _fastfoodState extends State<fastfood> {
               color: Colors.white,
               height: 261,
               child: StreamBuilder<QuerySnapshot>(
-                  stream: startTheDayRef.snapshots(),
+                  stream: hamburgerRef.snapshots(),
                   builder: (context, AsyncSnapshot snapshots){
                     if(snapshots.hasError){
                       return Text('no data');

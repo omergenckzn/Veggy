@@ -15,6 +15,7 @@ class startTheDay extends StatefulWidget {
 
 class _startTheDayState extends State<startTheDay> {
   CollectionReference startTheDayRef = FirebaseFirestore.instance.collection('startTheDayRecipes');
+  CollectionReference freshBevRef = FirebaseFirestore.instance.collection('freshBev');
 
   Color pageThemeColor = Color.fromRGBO(242, 201, 76, 1);
 
@@ -265,7 +266,7 @@ class _startTheDayState extends State<startTheDay> {
               color: Colors.white,
               height: 261,
               child: StreamBuilder<QuerySnapshot>(
-                  stream: startTheDayRef.snapshots(),
+                  stream: freshBevRef.snapshots(),
                   builder: (context, AsyncSnapshot snapshots){
                     if(snapshots.hasError){
                       return Text('no data');

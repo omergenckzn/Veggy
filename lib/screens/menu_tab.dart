@@ -117,7 +117,7 @@ class menuTab extends StatelessWidget {
                 height: MediaQuery.of(context).size.width * 0.17,
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                      primary: Color.fromRGBO(255, 255, 255, 1),
+                      backgroundColor: Color.fromRGBO(255, 255, 255, 1),
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(16)
                       )
@@ -130,7 +130,7 @@ class menuTab extends StatelessWidget {
                       Image.asset('assets/dinner.png'),
                       SizedBox(width: 10,),
                       Text(
-                        'Dinner?',
+                        'Dinner',
                         style: TextStyle(
                             fontFamily: "",
                             fontWeight: FontWeight.w500,
@@ -176,7 +176,7 @@ class menuTab extends StatelessWidget {
                 height: MediaQuery.of(context).size.width * 0.17,
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                      primary: Color.fromRGBO(255, 255, 255, 1),
+                      backgroundColor: Color.fromRGBO(255, 255, 255, 1),
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(16)
                       )
