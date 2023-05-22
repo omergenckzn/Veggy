@@ -30,6 +30,7 @@ dependencies:
   cloud_firestore: ^2.2.1
   firebase_core: ^1.2.1
   firebase_storage: ^9.0.0
+  flutter_remix: ^0.0.3
 
 
 

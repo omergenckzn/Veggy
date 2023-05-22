@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_remix/flutter_remix.dart';
 import 'dinner.dart';
 
 
@@ -114,14 +115,20 @@ class _ingredientsState extends State<ingredients> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Expanded(
-                        child: Text(
-                          'Servings',
-                          style: TextStyle(
-                              fontFamily: "Sfui2",
-                              fontWeight: FontWeight.w500,
-                              color: Color.fromRGBO(43, 43, 43, 0.7),
-                              fontSize: MediaQuery.of(context).size.width * 0.043
-                          ),
+                        child: Row(
+                          children: [
+                            Text(
+                              'Servings',
+                              style: TextStyle(
+                                  fontFamily: "Sfui2",
+                                  fontWeight: FontWeight.w500,
+                                  color: Color.fromRGBO(43, 43, 43, 0.7),
+                                  fontSize: MediaQuery.of(context).size.width * 0.043
+                              ),
+                            ),
+                            SizedBox(width: 8,),
+                            Icon(FlutterRemix.restaurant_fill,color: themeColor),
+                          ],
                         ),
                       ),
                       Expanded(
@@ -137,14 +144,20 @@ class _ingredientsState extends State<ingredients> {
                       ),
                       Spacer(flex: 2,),
                       Expanded(
-                        child: Text(
-                          'Preparation',
-                          style: TextStyle(
-                              fontFamily: "Sfui2",
-                              fontWeight: FontWeight.w500,
-                              color: Color.fromRGBO(43, 43, 43, 0.7),
-                              fontSize: MediaQuery.of(context).size.width * 0.043
-                          ),
+                        child: Row(
+                          children: [
+                            Text(
+                              'Preparation',
+                              style: TextStyle(
+                                  fontFamily: "Sfui2",
+                                  fontWeight: FontWeight.w500,
+                                  color: Color.fromRGBO(43, 43, 43, 0.7),
+                                  fontSize: MediaQuery.of(context).size.width * 0.043
+                              ),
+                            ),
+                            SizedBox(width: 8,),
+                            Icon(FlutterRemix.time_line,color: themeColor),
+                          ],
                         ),
                       ),
                       Expanded(
@@ -160,14 +173,20 @@ class _ingredientsState extends State<ingredients> {
                       ),
                       Spacer(flex: 2,),
                       Expanded(
-                        child: Text(
-                          'Calories',
-                          style: TextStyle(
-                              fontFamily: "Sfui2",
-                              fontWeight: FontWeight.w500,
-                              color: Color.fromRGBO(43, 43, 43, 0.7),
-                              fontSize: MediaQuery.of(context).size.width * 0.043
-                          ),
+                        child: Row(
+                          children: [
+                            Text(
+                              'Calories',
+                              style: TextStyle(
+                                  fontFamily: "Sfui2",
+                                  fontWeight: FontWeight.w500,
+                                  color: Color.fromRGBO(43, 43, 43, 0.7),
+                                  fontSize: MediaQuery.of(context).size.width * 0.043
+                              ),
+                            ),
+                            SizedBox(width: 8,),
+                            Icon(FlutterRemix.fire_fill,color: themeColor),
+                          ],
                         ),
                       ),
                       Expanded(
